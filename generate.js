@@ -52,7 +52,7 @@ function getA1Cdata() {
   let liElem1 = document.createElement('li');
   let aElem1= document.createElement('a');
   aElem1.setAttribute('href','#pane1');
-  aElem0.setAttribute('data-toggle','tab');
+  aElem1.setAttribute('data-toggle','tab');
   aElem1.innerHTML = 'Page1';
   liElem1.appendChild(aElem1);
   ulElem.appendChild(liElem1);
