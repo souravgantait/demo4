@@ -47,6 +47,7 @@ function getA1Cdata() {
   aElem0.className= 'nav-link active';
   aElem0.innerHTML = 'Page0';liElem0.appendChild(aElem0);ulElem.appendChild(liElem0);
   let liElem1 = document.createElement('li');
+  liElem1.className= 'nav-item';
   let aElem1= document.createElement('a');
   aElem1.setAttribute('href','#pane1');
   aElem1.setAttribute('data-toggle','tab');
