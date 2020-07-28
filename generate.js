@@ -37,7 +37,27 @@ function getA1Cdata() {
       document.getElementById("patientFN").innerText = error.stack;
     }
   );
-   let container = document.getElementById('containerId');let ulElem = document.createElement('ul');ulElem.setAttribute('id', 'myTab');ulElem.className= 'nav nav-tabs';let liElem0 = document.createElement('li');let aElem0= document.createElement('a');aElem0.setAttribute('href','#pane0');liElem0.className= 'active';aElem0.setAttribute('data-toggle','tab');aElem0.innerHTML = 'Page0';liElem0.appendChild(aElem0);ulElem.appendChild(liElem0);let liElem1 = document.createElement('li');let aElem1= document.createElement('a');aElem1.setAttribute('href','#pane1');aElem1.setAttribute('data-toggle','tab');aElem1.innerHTML = 'Page1';liElem1.appendChild(aElem1);ulElem.appendChild(liElem1);container.appendChild(ulElem);let tabContent = document.createElement('div');tabContent.className='tab-content';let tabPane0 = document.createElement('div');tabPane0.className='tab-pane fade in active';tabPane0.setAttribute('id','pane0');let tblRow0=null; let tblCell0=null;tblRow0 = document.createElement('div');tblRow0.classList.add('row'); tblCell0 = document.createElement('div');tblCell0.className='col-sm-12';tblCell0.setAttribute('style', 'padding: 40px;');tblRow0.appendChild(tblCell0);displayBarChart(tblCell0,'Observation','VITAL SIGN (BMI)');;tabPane0.appendChild(tblRow0);tabContent.appendChild(tabPane0);tblRow0 = document.createElement('div');tblRow0.classList.add('row'); tblCell0 = document.createElement('div');tblCell0.className='col-sm-12';tblCell0.setAttribute('style', 'padding: 40px;');tblRow0.appendChild(tblCell0);displayTreeView(tblCell0,'MedicationRequest','Text|Status|Intent');;tabPane0.appendChild(tblRow0);tabContent.appendChild(tabPane0);let tabPane1 = document.createElement('div');tabPane1.className='tab-pane fade';tabPane1.setAttribute('id','pane1');let tblRow1=null; let tblCell1=null;tblRow1 = document.createElement('div');tblRow1.classList.add('row'); tblCell1 = document.createElement('div');tblCell1.className='col-sm-12';tblCell1.setAttribute('style', 'padding: 40px;');tblRow1.appendChild(tblCell1);displayLine(tblCell1,'Observation','LAB (Createnine)');;tabPane1.appendChild(tblRow1);tabContent.appendChild(tabPane1);tblRow1 = document.createElement('div');tblRow1.classList.add('row'); tblCell1 = document.createElement('div');tblCell1.className='col-sm-12';tblCell1.setAttribute('style', 'padding: 40px;');tblRow1.appendChild(tblCell1);displayTable(tblCell1,'Procedure','Text|Status|PerformedPeriodstart|PerformedPeriodEnd');;tabPane1.appendChild(tblRow1);tabContent.appendChild(tabPane1);container.appendChild(tabContent);
+   let container = document.getElementById('containerId');let ulElem = document.createElement('ul');ulElem.setAttribute('id', 'myTab');
+  ulElem.className= 'nav nav-tabs';
+  let liElem0 = document.createElement('li');
+  let aElem0= document.createElement('a');
+  aElem0.setAttribute('href','#pane0');
+  liElem0.className= 'active nav-item';
+  aElem0.setAttribute('data-toggle','tab');
+  aElem0.className= 'nav-link active';
+  aElem0.innerHTML = 'Page0';liElem0.appendChild(aElem0);ulElem.appendChild(liElem0);
+  let liElem1 = document.createElement('li');
+  let aElem1= document.createElement('a');
+  aElem1.setAttribute('href','#pane1');
+  aElem1.setAttribute('data-toggle','tab');
+  aElem1.className= 'nav-link';
+  aElem1.innerHTML = 'Page1';
+  liElem1.appendChild(aElem1);
+  ulElem.appendChild(liElem1);
+  container.appendChild(ulElem);
+  let tabContent = document.createElement('div');
+  tabContent.className='tab-content';
+  let tabPane0 = document.createElement('div');tabPane0.className='tab-pane fade in active';tabPane0.setAttribute('id','pane0');let tblRow0=null; let tblCell0=null;tblRow0 = document.createElement('div');tblRow0.classList.add('row'); tblCell0 = document.createElement('div');tblCell0.className='col-sm-12';tblCell0.setAttribute('style', 'padding: 40px;');tblRow0.appendChild(tblCell0);displayBarChart(tblCell0,'Observation','VITAL SIGN (BMI)');;tabPane0.appendChild(tblRow0);tabContent.appendChild(tabPane0);tblRow0 = document.createElement('div');tblRow0.classList.add('row'); tblCell0 = document.createElement('div');tblCell0.className='col-sm-12';tblCell0.setAttribute('style', 'padding: 40px;');tblRow0.appendChild(tblCell0);displayTreeView(tblCell0,'MedicationRequest','Text|Status|Intent');;tabPane0.appendChild(tblRow0);tabContent.appendChild(tabPane0);let tabPane1 = document.createElement('div');tabPane1.className='tab-pane fade';tabPane1.setAttribute('id','pane1');let tblRow1=null; let tblCell1=null;tblRow1 = document.createElement('div');tblRow1.classList.add('row'); tblCell1 = document.createElement('div');tblCell1.className='col-sm-12';tblCell1.setAttribute('style', 'padding: 40px;');tblRow1.appendChild(tblCell1);displayLine(tblCell1,'Observation','LAB (Createnine)');;tabPane1.appendChild(tblRow1);tabContent.appendChild(tabPane1);tblRow1 = document.createElement('div');tblRow1.classList.add('row'); tblCell1 = document.createElement('div');tblCell1.className='col-sm-12';tblCell1.setAttribute('style', 'padding: 40px;');tblRow1.appendChild(tblCell1);displayTable(tblCell1,'Procedure','Text|Status|PerformedPeriodstart|PerformedPeriodEnd');;tabPane1.appendChild(tblRow1);tabContent.appendChild(tabPane1);container.appendChild(tabContent);
   
 }
 
